@@ -3,7 +3,7 @@
 export PATH=/usr/local/bin:$PATH
 # add postgresql commando to PATH
 export PATH=/Library/PostgreSQL/9.3/bin:/Library/PostgreSQL/9.3/bin/:/Library/PostgreSQL/9.3/:$PATH
-
+export PGHOST=localhost
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
