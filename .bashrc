@@ -53,5 +53,13 @@ fi
 
 export DJANGO_COLORS="dark;http_success=blue,bold"
 
-
+# Start an HTTP server from a directory, optionally specifying the port
+function web_server() {
+    local port="8000"
+    python -m SimpleHTTPServer "$port"
+}
+function mail_server() {
+    local port="1025"
+    python -m smtpd -n -c DebuggingServer localhost:"$port"
+}
 
