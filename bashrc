@@ -17,9 +17,14 @@
 # sudo pip install virtualenvwrapper
 # source .bashrc
 
+# some locale override:
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Override path to priotitize /usr/local/bin as suggested by Homebrew
 export PATH=/usr/local/bin:$PATH
 # add postgresql commando to PATH
+export DYLD_LIBRARY_PATH=/Library/PostgreSQL/9.3/lib
 export PATH=/Library/PostgreSQL/9.3/bin:/Library/PostgreSQL/9.3/bin/:/Library/PostgreSQL/9.3/:$PATH
 export PGHOST=localhost
 
