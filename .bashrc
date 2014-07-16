@@ -1,3 +1,21 @@
+# cd ~/
+# # clone bashrc from repo
+# git clone git@github.com:jfunez/dotfiles.git
+# cd dotfiles/.bashrc $HOME/.bashrc
+
+# # download external files:
+# brew install wget
+# wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+# mv git-completion.bash .git-completion.bash
+# wget https://raw.githubusercontent.com/git/git/contrib/completion/git-prompt.sh
+# mv git-prompt.sh .git-prompt.sh
+
+# # install pip globally
+# sudo easy_install pip
+# # install virtualenv and virtualenvwrapper
+# sudo pip install virtualenv
+# sudo pip install virtualenvwrapper
+# source .bashrc
 
 # Override path to priotitize /usr/local/bin as suggested by Homebrew
 export PATH=/usr/local/bin:$PATH
