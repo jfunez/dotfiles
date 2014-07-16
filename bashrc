@@ -23,8 +23,12 @@ export LC_ALL=en_US.UTF-8
 
 # Override path to priotitize /usr/local/bin as suggested by Homebrew
 export PATH=/usr/local/bin:$PATH
-# add postgresql commando to PATH
-export DYLD_LIBRARY_PATH=/Library/PostgreSQL/9.3/lib
+
+# add postgresql commandos to PATH
+#### export DYLD_LIBRARY_PATH=/Library/PostgreSQL/9.3/lib
+# INSTEAD OF OVERRIDE DYLD_LIBRARY_PATH, TO AVOID postgres dynamic link error: 'Image not found', to solve simply:
+# sudo ln -s /Library/PostgreSQL/9.3/lib/libssl.1.0.0.dylib /usr/lib
+# sudo ln -s /Library/PostgreSQL/9.3/lib/libcrypto.1.0.0.dylib /usr/lib
 export PATH=/Library/PostgreSQL/9.3/bin:/Library/PostgreSQL/9.3/bin/:/Library/PostgreSQL/9.3/:$PATH
 export PGHOST=localhost
 
